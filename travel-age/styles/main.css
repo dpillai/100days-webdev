@@ -1,6 +1,19 @@
 body {
   font-family: "Quicksand", sans-serif;
 }
+
+header {
+  /* background-color: blanchedalmond; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 60px;
+}
+
+a {
+  text-decoration: none;
+}
+
 #page-logo a {
   padding: 10px;
   font-family: "Oleo Script", sans-serif;
@@ -9,4 +22,22 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+header ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* background-color: coral;
+  border: 2px solid black; */
+}
+
+header li {
+  /* background-color: darkcyan; */
+  padding: 10px;
 }
