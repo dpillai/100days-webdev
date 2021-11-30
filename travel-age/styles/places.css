@@ -1,5 +1,6 @@
 body {
   background: linear-gradient(30deg, rgb(77, 77, 77), rgb(58, 58, 58));
+  color: rgb(68, 68, 68);
 }
 header {
   position: static;
@@ -16,8 +17,31 @@ li {
   overflow: hidden;
 }
 img {
-  height: 200px;
+  width: 300px;
+  height: 280px;
+  object-fit: cover;
+  /* height: 200px; */
 }
 .item-content {
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* .item-content p {
+  margin: 0;
+} */
+.actions {
+  /* padding-top: 48px; */
+  /* align-self: flex-end; */
+  text-align: right;
+}
+.actions a {
+  color: rgb(70, 155, 174);
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 6px;
+}
+.actions a:hover {
+  background-color: rgb(231, 244, 247);
 }
