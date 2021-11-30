@@ -1,13 +1,50 @@
-html {
-  /* margin: 10px; */
-  /* border: 5px solid black; */
-}
+/* html {
+  margin: 10px;
+  border: 5px solid black;
+} */
 body {
   margin: 0;
-  /* border: 5px solid black; */
+  border: 5px solid black;
   font-family: "Quicksand", sans-serif;
 }
+header {
+  /* border: 5px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 60px;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+}
 
+#page-logo a {
+  padding: 10px;
+  font-family: "Oleo Script", sans-serif;
+  color: rgb(245, 243, 160);
+  font-size: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+header a {
+  color: rgb(255, 251, 0);
+}
+header a:hover {
+  color: rgb(77, 77, 77);
+  background-color: rgb(255, 251, 0);
+}
+header ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header li {
+  padding: 10px;
+}
 footer {
   /* height: 200px; */
   background: linear-gradient(70deg, rgb(24, 24, 24), rgb(25, 29, 29));
@@ -33,7 +70,7 @@ ul {
 a {
   text-decoration: none;
   font-size: 20px;
-  padding: 12px;
+  /* padding: 12px; */
   text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.2);
   border-radius: 8px;
 }
