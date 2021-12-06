@@ -5,7 +5,7 @@ body {
 header {
   position: static;
 }
-ul {
+main ul {
   width: 800px;
   margin: 0 auto;
 }

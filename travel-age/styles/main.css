@@ -67,10 +67,10 @@ ul {
   margin: 0;
   padding: 0;
 }
-a {
+/* a {
   text-decoration: none;
   font-size: 20px;
-  /* padding: 12px; */
+  background: none;
   text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.2);
   border-radius: 8px;
-}
+} */
