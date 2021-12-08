@@ -1,0 +1,35 @@
+body {
+  background-color: rgb(52, 37, 22);
+  color: goldenrod;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  /* justify-content: space-around; */
+}
+/* header nav ul li {
+  padding: 12px 24px;
+  border-radius: 8px;
+} */
+header a {
+  color: goldenrod;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+header a:hover {
+  background-color: goldenrod;
+  color: rgb(52, 37, 22);
+}
+main {
+  width: 50%;
+  margin: auto;
+}
