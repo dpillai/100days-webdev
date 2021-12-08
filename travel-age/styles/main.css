@@ -7,6 +7,7 @@ body {
   /* border: 5px solid blue; */
   font-family: "Quicksand", sans-serif;
 }
+
 header {
   /* border: 5px solid red; */
   display: flex;
@@ -27,12 +28,18 @@ header {
   font-size: 50px;
   text-decoration: none;
   text-transform: uppercase;
-  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.2);
 }
 header a {
   color: rgb(255, 251, 0);
+  padding: 12px;
+  text-decoration: none;
+  font-size: 20px;
+  background: none;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.2);
+  border-radius: 8px;
 }
-header a:hover {
+header nav a:hover {
   color: rgb(77, 77, 77);
   background-color: rgb(255, 251, 0);
 }
@@ -67,10 +74,3 @@ ul {
   margin: 0;
   padding: 0;
 }
-/* a {
-  text-decoration: none;
-  font-size: 20px;
-  background: none;
-  text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.2);
-  border-radius: 8px;
-} */

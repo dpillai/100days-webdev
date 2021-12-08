@@ -5,11 +5,26 @@ body {
 header {
   position: static;
 }
+
+#page-logo a {
+  color: rgb(183, 230, 235);
+}
+
+header a {
+  color: rgb(183, 230, 235);
+}
+
+header nav a:hover {
+  color: rgb(59, 59, 59);
+  background-color: rgb(183, 230, 235);
+}
+
 main ul {
   width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 48px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
 }
 main li {
   display: flex;
@@ -34,9 +49,9 @@ main li img {
   flex-direction: column;
   justify-content: space-between;
 }
-/* .item-content p {
+.item-content h2 {
   margin: 0;
-} */
+}
 .actions {
   /* padding-top: 48px; */
   /* align-self: flex-end; */
