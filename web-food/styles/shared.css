@@ -1,35 +1,71 @@
+* {
+  box-sizing: border-box;
+  /* outline: 2px solid white; */
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
 body {
   background-color: rgb(52, 37, 22);
   color: goldenrod;
 }
 
+ul {
+  list-style-type: none;
+  display: flex;
+}
+a {
+  text-decoration: none;
+  border-radius: 8px;
+}
 header {
+  margin: 10px;
+  background-color: rgb(27, 19, 11);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  /* justify-content: space-around; */
+header ul {
+  justify-content: space-around;
 }
-/* header nav ul li {
-  padding: 12px 24px;
-  border-radius: 8px;
-} */
 header a {
   color: goldenrod;
-  text-decoration: none;
-  border-radius: 8px;
   padding: 12px 24px;
-  border-radius: 8px;
 }
 header a:hover {
   background-color: goldenrod;
   color: rgb(52, 37, 22);
 }
 main {
-  width: 50%;
   margin: auto;
+  width: 50%;
+}
+main h1 {
+  margin: 10px;
+}
+section ul {
+  justify-content: space-around;
+}
+section ul li {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+section ul li article img {
+  height: 200px;
+  width: 300px;
+}
+.actions {
+  background-color: rgb(245, 220, 173);
+}
+.actions h3 {
+  /* margin-top: 10px; */
+  color: rgb(59, 59, 59);
+}
+.actions a {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  background-color: goldenrod;
 }
