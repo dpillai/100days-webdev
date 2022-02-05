@@ -4,6 +4,9 @@ html {
   --color-grey-600: rgb(58, 58, 58);
   --color-grey-900: rgb(41, 41, 41);
 
+  --color-primary-300: rgb(167, 226, 255);
+  --color-primary-900: rgb(0, 170, 255);
+
   background-color: var(--color-grey-100);
   font-family: "Krub", sans-serif;
   font-weight: 400;
@@ -39,7 +42,7 @@ h1 {
 
 .price {
   color: var(--color-grey-900);
-  background-color: rgb(167, 226, 255);
+  background-color: var(--color-primary-300);
   text-align: center;
   margin: 30px auto 10px auto;
   font-size: 50px;
@@ -64,7 +67,7 @@ h1 {
 
 .icon {
   display: flex;
-  width: 10px;
+  width: 15px;
 }
 
 .sub-feature-text {
@@ -79,7 +82,7 @@ h1 {
 }
 
 .button {
-  color: rgb(0, 170, 255);
+  color: var(--color-primary-900);
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;

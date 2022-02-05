@@ -147,3 +147,14 @@ article img {
     grid-template-columns: 1fr;
   }
 }
+
+/* Using visibility: hidden hides an element from the browser; 
+however, that hidden element still lives in the source code. 
+Basically, visibility: hidden makes the element invisible to the browser, 
+but it still remains in place and takes up the same space had you not hidden it. */
+
+/* Unlike the visibility property, which leaves an element in normal document flow, 
+display: none essentially removes the element completely from the document. 
+The attached element does not take up any space, even though it's still in the source code. 
+As far as the browser's concerned, the item is gone. This can be useful; it also can be damaging 
+to your page if misused. */
