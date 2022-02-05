@@ -14,59 +14,81 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <form action="/" method="POST">
-      <label for="username">User Name</label>
-      <input type="text" name="user-name" id="username" />
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" />
-      <label for="age">Age</label>
-      <input type="number" name="age" id="age" />
-      <label for="password">Password</label>
-      <input type="password" name="password" id="password" />
-      <label for="birthdate">Birth Date</label>
-      <input type="date" name="birthdate" id="birthdate" />
-      <hr />
-      <h2>Verification</h2>
-      <div class="form-control-radio">
-        <input
-          type="radio"
-          name="verification"
-          id="verify-with-text"
-          value="text"
-        />
-        <label for="verify-with-text">Via SMS text</label>
-      </div>
-      <div class="form-control-radio">
-        <input
-          type="radio"
-          name="verification"
-          id="verify-with-phone"
-          value="phone"
-        />
-        <label for="verify-with-phone">Via Phone</label>
-      </div>
-      <div class="form-control-radio">
-        <input
-          type="radio"
-          name="verification"
-          id="verify-with-email"
-          value="email"
-        />
-        <label for="verify-with-email">Via Email</label>
-      </div>
-      <div class="form-control-radio">
-        <input type="checkbox" name="terms" id="terms" value="agreed" />
-        <label for="terms">Agree to terms</label>
-      </div>
-      <div class="form-control-radio">
-        <input type="checkbox" name="contact" id="contact" value="email" />
-        <label for="contact">Contact via email</label>
-      </div>
-      <div class="form-control-radio">
-        <input type="checkbox" name="contact" id="contact" value="phone" />
-        <label for="contact">Contact via phone</label>
-      </div>
-      <button type="submit">Click Here</button>
-    </form>
+    <h1>User Details</h1>
+    <main>
+      <form action="/" method="POST">
+        <section>
+          <label for="username">User Name</label>
+          <input type="text" name="user-name" id="username" placeholder="max" />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+        </section>
+        <section>
+          <ul>
+            <li>
+              <label for="age">Age</label>
+              <input type="number" name="age" id="age" />
+            </li>
+            <li>
+              <label for="birthdate">Birth Date</label>
+              <input type="date" name="birthdate" id="birthdate" />
+            </li>
+          </ul>
+        </section>
+        <label for="message">Your Message</label>
+        <textarea name="message" id="messsage" cols="30" rows="10"></textarea>
+        <hr />
+        <label for="color">Favorite Color</label>
+        <select name="color" id="color">
+          <option value="blue">blue</option>
+          <option value="red">red</option>
+          <option value="black">black</option>
+        </select>
+        <h2>Verification</h2>
+        <div class="form-control-radio">
+          <input
+            type="radio"
+            name="verification"
+            id="verify-with-text"
+            value="text"
+          />
+          <label for="verify-with-text">Via SMS text</label>
+        </div>
+        <div class="form-control-radio">
+          <input
+            type="radio"
+            name="verification"
+            id="verify-with-phone"
+            value="phone"
+          />
+          <label for="verify-with-phone">Via Phone</label>
+        </div>
+        <div class="form-control-radio">
+          <input
+            type="radio"
+            name="verification"
+            id="verify-with-email"
+            value="email"
+          />
+          <label for="verify-with-email">Via Email</label>
+        </div>
+        <div class="form-control-radio">
+          <input type="checkbox" name="terms" id="terms" value="agreed" />
+          <label for="terms">Agree to terms</label>
+        </div>
+        <div class="form-control-radio">
+          <input type="checkbox" name="contact" id="contact" value="email" />
+          <label for="contact">Contact via email</label>
+        </div>
+        <div class="form-control-radio">
+          <input type="checkbox" name="contact" id="contact" value="phone" />
+          <label for="contact">Contact via phone</label>
+        </div>
+        <button type="reset">reset</button>
+        <button type="submit">Click Here</button>
+      </form>
+    </main>
   </body>
 </html>
