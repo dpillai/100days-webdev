@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+    <main>
+      <form action="/" method="POST">
+        <h2>How can we help you?</h2>
+        <section id="personal-details">
+          <label for="username">User Name</label>
+          <input
+            type="text"
+            name="user-name"
+            id="username"
+            placeholder="max"
+            required
+          />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+          <label for="telephone">Your Phone Number</label>
+          <input
+            type="tel"
+            name="telephone"
+            id="telephone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required
+          />
+        </section>
+        <label for="message">Your Message</label>
+        <textarea
+          name="message"
+          id="messsage"
+          cols="30"
+          rows="10"
+          minlength="10"
+          maxlength="200"
+        ></textarea>
+        <p>How did you find us?</p>
+        <select name="find" id="find">
+          <option value="search">Web Search</option>
+          <option value="friend">Friend</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <h2>How should we reply?</h2>
+        <section id="contact-options">
+          <div class="form-control-inline">
+            <input type="radio" name="contact" id="contact" value="email" />
+            <label for="contact">Email me</label>
+          </div>
+          <div class="form-control-inline">
+            <input type="radio" name="contact" id="contact" value="phone" />
+            <label for="contact">Call me</label>
+          </div>
+          <div class="form-control-inline">
+            <input type="radio" name="contact" id="contact" value="none" />
+            <label for="contact">Don't reply</label>
+          </div>
+        </section>
+        <div class="form-control-inline">
+          <input type="checkbox" name="terms" id="terms" value="agreed" />
+          <label for="terms">Accept Terms</label>
+        </div>
+        <section id="actions">
+          <button type="reset">Clear</button>
+          <button type="submit">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

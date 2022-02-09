@@ -1,0 +1,61 @@
+body {
+  background-color: rgb(231, 243, 248);
+  /* width: 80%; */
+  margin: 8rem;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+form {
+  width: 30rem;
+  margin: 3rem auto;
+  background-color: rgb(241, 239, 239);
+  padding: 1rem;
+  border-radius: 6px;
+}
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+input,
+textarea,
+select {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+input:focus,
+textarea:focus {
+  background-color: rgb(231, 243, 248);
+  color: rgb(32, 5, 63);
+}
+
+.form-control-inline {
+  display: flex;
+}
+.form-control-inline input {
+  width: auto;
+  margin-right: 0.3rem;
+}
+#contact-options {
+  margin-bottom: 0.5rem;
+}
+#actions {
+  display: flex;
+  justify-content: end;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  color: rgb(230, 221, 240);
+  background-color: rgb(35, 3, 71);
+  margin: 0.1rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 2px;
+}
+button:hover {
+  background-color: rgb(64, 51, 78);
+}
